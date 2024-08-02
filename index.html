@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        .password {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .copy-button {
+            cursor: pointer;
+        }
+        .slider-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="slider-container">
+            <label for="lengthSlider">Password Length: <span id="lengthValue">12</span></label>
+            <input type="range" id="lengthSlider" min="8" max="50" value="12" oninput="updateLength(this.value)">
+        </div>
+        <p class="password" id="password"></p>
+        <button class="button copy-button" onclick="copyToClipboard()">Copy to Clipboard</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
