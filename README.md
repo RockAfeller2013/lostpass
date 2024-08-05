@@ -1,3 +1,5 @@
+# LostPass - Password Generator
+
 To integrate this password generator into your open-source WordPress blog page, you can follow these steps:
 
 1. **Create a Child Theme**: It's a good practice to use a child theme to ensure your customizations are not overwritten by theme updates.
